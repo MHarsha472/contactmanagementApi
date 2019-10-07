@@ -1,0 +1,29 @@
+#%RAML 1.0
+version: 1
+title: contactManagementAPI
+description: CRUD to DB
+
+/dataBase:
+  post:
+    description: Create new Record
+    body:
+      application/json:
+        example: !include example/data.json
+  put:
+    description: Update Existing Record
+    body:
+      application/json:
+        example: !include example/data.json
+  delete:
+    description: Delete Record
+    body:
+      application/json:
+        example: !include example/data.json
+  /id:
+    get:
+      description: Get Record By Id
+      
+      
+          
+        
+          
